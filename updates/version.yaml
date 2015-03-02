@@ -10,3 +10,7 @@
 1.0.4:
     - fixed code update
     - update_code_column_subscriber.php
+1.0.5:
+    - Added the name surname and country column to the subscribers table.
+    - create_subscribers_name_surname_country.php
+    - Adding a profile form.

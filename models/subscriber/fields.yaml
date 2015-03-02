@@ -3,8 +3,17 @@
 # ===================================
 
 fields:
+    name:
+        label: Name
+        disabled: true
+    surname:
+        label: Surname
+        disabled: true
     email:
         label: Email
+        disabled: true
+    country:
+        label: Country
         disabled: true
     latitude:
         label: Latitude

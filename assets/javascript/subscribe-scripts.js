@@ -10,7 +10,7 @@
 		$('#longitude').val(longitude);
 	  };
 
-	  function error() {
-	    console.log('dont worry proud!');
-	  };
+	function error() {
+		console.log('dont worry proud!');
+	};
 })(jQuery)

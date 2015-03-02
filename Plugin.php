@@ -28,6 +28,7 @@ class Plugin extends PluginBase
         return [
             'JorgeAndrade\Subscribe\Components\Subscriber'       => 'formSubscribe',
             'JorgeAndrade\Subscribe\Components\Unsubscribe'       => 'formUnsubscribe',
+            'JorgeAndrade\Subscribe\Components\Profile'       => 'formProfile',
         ];
     }
 

@@ -25,6 +25,12 @@ class Subscriber extends ComponentBase
                 'type' => 'string',
                 'default'     => 'unsubscribe'
             ],
+            'geo' => [
+                'title'       => 'Geolocation',
+                'description' => 'Enable or disable geolocation',
+                'type' => 'dropdown',
+                'default'     => 'enabled'
+            ],
             'thanksMessage' => [
                 'title'       => 'Thanks Message',
                 'description' => 'Thanks message for new subscribers',
@@ -40,9 +46,18 @@ class Subscriber extends ComponentBase
         ];
     }
 
+    public function getGeoOptions()
+    {
+        return ['enabled'=>'Enabled', 'disabled'=>'Disabled'];
+    }
+
     public function onRun()
     {
-        $this->addJs('/plugins/jorgeandrade/subscribe/assets/javascript/subscribe-scripts.js');
+        if ($this->property('geo') === 'enabled') {
+            $this->addJs('/plugins/jorgeandrade/subscribe/assets/javascript/subscribe-scripts.js');
+        }else{
+            $this->addJs('/plugins/jorgeandrade/subscribe/assets/javascript/subscribe-scripts-no-geo.js');
+        }
     }
 
     public function onAddSubscriber()

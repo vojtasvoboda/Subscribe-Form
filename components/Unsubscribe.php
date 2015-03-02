@@ -62,7 +62,7 @@ class Unsubscribe extends ComponentBase
              $subscriber->status = 0;
              $subscriber->code = null;
              $subscriber->save();
-            \Mail::send('jorgeandrade.subscribe::mail.unsubscribe', $data, function($message) use ($email) {
+            \Mail::send('jorgeandrade.subscribe::mail.unsubscribe', [], function($message) use ($email) {
                 $message->to($email, 'Bye old Subscriber');
             });
 

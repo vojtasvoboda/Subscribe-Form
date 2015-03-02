@@ -6,15 +6,26 @@ columns:
     id:
         label: ID
         searchable: true
+    name:
+        label: Name
+        searchable: true
+    surname:
+        label: Surname
+        searchable: true
     email:
         label: Email
+        searchable: true
+    country:
+        label: Country
         searchable: true
     latitude:
         label: Latitude
         searchable: true
+        invisible: true
     longitude:
         label: Longitude
         searchable: true
+        invisible: true
     status:
         label: Subscribed
         sortable: true
