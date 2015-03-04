@@ -25,7 +25,6 @@ class Subscriber extends ComponentBase
                 'type' => 'string',
                 'default'     => 'unsubscribe'
             ],
-            [
             'urlToProfile' => [
                 'title'       => 'Url Profile',
                 'description' => 'Path for generate a url to profile form',

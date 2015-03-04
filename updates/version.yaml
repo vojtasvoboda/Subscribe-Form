@@ -15,3 +15,4 @@
     - create_subscribers_name_surname_country.php
     - Adding a profile form.
 1.0.6: Fixed some bugs and adding config for url profile con subscriber component
+1.0.7: Fixed some bugs subscriber component
