@@ -25,6 +25,13 @@ class Subscriber extends ComponentBase
                 'type' => 'string',
                 'default'     => 'unsubscribe'
             ],
+            [
+            'urlToProfile' => [
+                'title'       => 'Url Profile',
+                'description' => 'Path for generate a url to profile form',
+                'type' => 'string',
+                'default'     => 'subscriber-profile'
+            ],
             'geo' => [
                 'title'       => 'Geolocation',
                 'description' => 'Enable or disable geolocation',
@@ -73,6 +80,7 @@ class Subscriber extends ComponentBase
 
             $subscriber = Subs::create($data);
             $data['url'] = URL::to($this->property('urlToUnsubscribe')."/".$data['code']);
+            $data['profile'] = URL::to($this->property('urlToProfile')."/".$data['code']);
             \Mail::send('jorgeandrade.subscribe::mail.subscribe', $data, function($message) use ($data) {
                 $message->to($data['email'], 'Hi New Subscriber');
             });

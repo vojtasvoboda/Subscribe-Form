@@ -5,19 +5,19 @@
 fields:
     name:
         label: Name
-        disabled: true
+        disabled: false
     surname:
         label: Surname
-        disabled: true
+        disabled: false
     email:
         label: Email
-        disabled: true
+        disabled: false
     country:
         label: Country
-        disabled: true
+        disabled: false
     latitude:
         label: Latitude
-        disabled: true
+        disabled: false
     longitude:
         label: Longitude
-        disabled: true
+        disabled: false

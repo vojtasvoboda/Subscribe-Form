@@ -14,3 +14,4 @@
     - Added the name surname and country column to the subscribers table.
     - create_subscribers_name_surname_country.php
     - Adding a profile form.
+1.0.6: Fixed some bugs and adding config for url profile con subscriber component

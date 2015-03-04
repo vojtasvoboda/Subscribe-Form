@@ -14,10 +14,7 @@ class UpdateCodeColumnSubscriber extends Migration
 
     public function down()
     {
-        Schema::table('andradedev_subscribe_subscribers', function($table)
-        {
-            $table->dropColumn('code');
-        });
+        
     }
 
 }
