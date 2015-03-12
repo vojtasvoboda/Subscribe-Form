@@ -18,13 +18,16 @@ columns:
     country:
         label: Country
         searchable: true
+    code:
+        label: Unique Code
+        searchable: false
     latitude:
         label: Latitude
-        searchable: true
+        searchable: false
         invisible: true
     longitude:
         label: Longitude
-        searchable: true
+        searchable: false
         invisible: true
     status:
         label: Subscribed
