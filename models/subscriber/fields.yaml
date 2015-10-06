@@ -5,19 +5,21 @@
 fields:
     name:
         label: Name
-        disabled: false
     surname:
         label: Surname
-        disabled: false
     email:
         label: Email
-        disabled: false
+        required: true
+    code@create:
+        label: Code
+        required: true
+        type: partial
+        path: code_field
     country:
         label: Country
-        disabled: false
+    country:
+        label: Country
     latitude:
         label: Latitude
-        disabled: false
     longitude:
         label: Longitude
-        disabled: false
